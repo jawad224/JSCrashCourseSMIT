@@ -11,7 +11,7 @@
 //     }
 // }
 
-// let Sum =recursive(5)
+// let Sum =recursive(6)
 //  console.log("Sum Recursion Function is ==>==>",Sum)
 
 
@@ -29,9 +29,9 @@
 
 //   let myarray = [2, 4, 5, 6];
 //   let isFound = recursive(6, myarray);
-//   console.log("Result:", isFound); //true
+//   console.log("Found:", isFound); //true
 //   let notFound = recursive(10, myarray);
-//   console.log("Result:", notFound); //false
+//   console.log("Found:", notFound); //false
 
 //Task-3
 //   function addParagraph(text) {
@@ -39,66 +39,66 @@
 //     paragraph.innerHTML = text; 
 //     document.body.appendChild(paragraph); 
 //   }
-//   addParagraph('I am Ahmed ILyas Student of Sir IShaq');
+//   addParagraph('I am Jawad Ahmed Student of Sir Ishaq');
 
 //Task-4
 // function addListItem(text) {
 //     const list = document.getElementById("myList");
-//     console.log("hello",list)
+//     console.log("Jawad",list)
 //     const newItem = document.createElement("li");
 //     newItem.innerHTML = text;
 //     list.appendChild(newItem);
 //   }
-//   addListItem("Ahmed")
+//   addListItem("Jawad Ahmed")
 
 //Task-5
-// function changeBackgroundColor(element, color) {
-//     element.style.backgroundColor = color;
+// function changeBackgroundColor(element, bgColor,color,padding, fontWeight) {
+//     element.style.backgroundColor = bgColor;
+//     element.style.color = color;
+//     element.style.padding = padding;
+//     element.style.fontWeight = fontWeight;
 // }
+
 // const myElement = document.getElementById("myElement");
-// changeBackgroundColor(myElement, "red");
+// changeBackgroundColor(myElement, "blue","#fff","1rem", "bold");
 
 //Task-6
 
-// function StoreValueToLocalStorage (userkey,data){
-//      let datastringify=JSON.stringify(data)
-//     localStorage.setItem(userkey,datastringify);
+// function StoreValueToLocalStorage (key,data){
+//     let datastringify = JSON.stringify(data);
+//     localStorage.setItem(key, datastringify);
 // }
 
 // let student1 ={
-//     name:"ahmed",
-//     age:23
+//     name:"Jawad Ahmed",
+//     age:21
 // }
 
-// StoreValueToLocalStorage("mytoken",student1)
+// StoreValueToLocalStorage("studentDetail",student1)
 
 //Task-7
 
 // function retrievesValueToLocalStorage (userkey){
 //    return  localstorageobject=JSON.parse(localStorage.getItem(userkey)) 
 // }
- 
-// let retriveData=  retrievesValueToLocalStorage("mytoken")
 
-// console.log("getData",retriveData)
+// let retriveData=  retrievesValueToLocalStorage("studentDetail");
+// console.log("studentDetail",retriveData);
 
 //Task-8
 
-// function LocalStorageObject (data){
+// function LocalStorageObject(data) {
+//     console.log("new studentDetail", data)
+//     localStorage.setItem("studentDetail", JSON.stringify(data))
+//     return JSON.parse(localStorage.getItem("studentDetail"))
 
-//     console.log("data",data)
-//  let setData=localStorage.setItem("studentDetail",JSON.stringify( data)) 
+// }
 
-//  return JSON.parse(localStorage.getItem("studentDetail"))
-
-// } 
-
-// let student ={
-//     name:"ahmed",
-//     age:23,
-//     student:"student of Sir Ishaq"
+// let student = {
+//     name: "Jawad Ahmed",
+//     age: 21,
+//     student: "student of Sir Ishaq"
 // }
 
 // let StudentDetail = LocalStorageObject(student)
-// console.log("get STudentDetail from localStorage",StudentDetail)
-
+// console.log("get STudentDetail from localStorage", StudentDetail)
